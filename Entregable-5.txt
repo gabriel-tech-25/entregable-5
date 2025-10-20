@@ -1,0 +1,23 @@
+CREATE TABLE `estudiantes`(
+    `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `nombre` VARCHAR(255) NOT NULL,
+    `edad` INT NOT NULL,
+    `ciudad` VARCHAR(255) NOT NULL
+);
+
+INSERT INTO estudiantes (nombre, edad, ciudad) VALUES 
+('Ana Gómez', 19, 'valledupar'),
+('Luis Martinez', 22, 'valledupar'),
+('Carlos pérez', 21, 'Bucaramanga'),
+('María Rodriguez', 18, 'Valledupar'),
+('Sofía López', 23, 'Bogotá'),
+('Blanca Martinez', 28, 'Valleudpar');
+
+SELECT * FROM estudiantes
+WHERE LOWER(ciudad) = 'valledupar'
+
+SELECT * FROM estudiantes
+WHERE edad > 20;
+
+SELECT ciudad, COUNT(*) AS total
+GROUP BY ciudad;
