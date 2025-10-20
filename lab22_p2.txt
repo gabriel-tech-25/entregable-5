@@ -1,0 +1,15 @@
+numero=int(input("Ingrese un numero:"))
+if numero % 2 == 0:
+    print("El número es par")
+else:
+    print("El número es impar")
+#bluce for
+numeros=[1,2,3,4,5]
+print("Cuadrado de los numeros:")
+for n in numeros:
+    print(f"el cuadrado de {n} es {n**2}")
+    #blucle while
+entrada=""
+while entrada !="Salir":
+    entrada=input("Escribe algo (o 'Salir' para terminar)")
+    print("Escribistes:", entrada)

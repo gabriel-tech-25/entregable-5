@@ -1,0 +1,19 @@
+print("¡Hola! Bienvenidos al programa de python ✋😊");
+#Declaramos las variables de diferentes tipos
+numero_entero=10 #int
+numero_decimal=2.8 #float
+texto="Programar es muy facil y divertido" #str
+#ejercicios básicos Matematicas
+suma=numero_entero+numero_decimal
+resta=numero_entero-numero_decimal
+multiplicacion=numero_entero*numero_decimal
+division=numero_entero/numero_decimal
+print("Resultados de la operaciones Matematicas: ")
+print("Suma:",suma)
+print("Resta:",resta)
+print("Multiplicacion:",multiplicacion)
+print("Division:",division)
+
+nombre=input("¿Cómo te llamas? ")
+mensaje="Hola " + nombre + ", Bienvenido al curso de programación en python"
+print(mensaje)

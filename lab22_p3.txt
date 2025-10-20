@@ -1,0 +1,24 @@
+#lista de nombres de estudiantes
+estudiantes=["Ana","Luis","Carlos","Maria"]
+print("Lista de estudiantes: ")
+for nombre in estudiantes:
+    print(nombre)
+#Diccionario de información de contacto
+contacto={
+    "nombre": "Juan perez",
+    "Correo": "juanperez@gmail.com"
+}
+print("\nInformación de contacto:")
+for clave, valor in contacto.items():
+    print(f"{clave}:{valor}")
+#Agregar
+opcion=input("\n ¿Quieres agregar a la lista(L) o actualizar el diccionario(D)?")
+if opcion.lower()=='1':
+    nuevo_estudiante=input("Ingreses el nombre del nuevo estudiante:")
+    estudiantes.append(nuevo_estudiante)
+elif opcion.lower()=="d":
+    nuevo_correo=input("Ingreses el nuevo correo:")
+    contacto["correo"]=nuevo_correo
+    print("diccionario actualizado:", contacto)
+else:
+    print("opción no valida")
